@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editTextPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backg"
+                android:padding="15dp"
+                android:text="500"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editTextPayment"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/orange"
+                android:textStyle="italic"
+                android:id="@+id/me"
+                android:text="BBN One year membership charges" />
+
+            <Button
+                android:id="@+id/buttonConfirmOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/me"
+                android:layout_marginTop="30dp"
+                android:background="@color/orange"
+                android:text="Proceed with payment"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
